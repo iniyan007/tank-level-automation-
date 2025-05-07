@@ -3,13 +3,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
-const dotenv =require("dotenv")
-dotenv.config();
+const dotenv = require("dotenv")
+dotenv.config()
 const app = express();
 app.use(cors());
 app.use(express.json());
-
-
 const User = require("./models/User");
 const Tank = require("./models/Tank");
 
