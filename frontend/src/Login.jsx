@@ -9,7 +9,7 @@ function Login({ setToken }) {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/login", { username, password });
+      const res = await axios.post("https://tank-level-automation-baab.onrender.com/api/login", { username, password });
       localStorage.setItem("token", res.data.token);
       setToken(res.data.token);
       navigate("/dashboard");

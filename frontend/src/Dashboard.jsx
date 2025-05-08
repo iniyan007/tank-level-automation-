@@ -6,7 +6,7 @@ function Dashboard({ token }) {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await axios.get("http://localhost:5000/api/level", {
+            const res = await axios.get("https://tank-level-automation-baab.onrender.com/api/level", {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setTanks(res.data);
